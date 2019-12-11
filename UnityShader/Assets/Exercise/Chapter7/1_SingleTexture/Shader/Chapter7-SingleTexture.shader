@@ -42,7 +42,7 @@ shader "LearnUnityShader/Chapter7/SingleTexture"
             
             //声明顶点函数
             #pragma vertex vert
-            //声明片源函数
+            //声明片元函数
             #pragma fragment frag
             //使用Lighting中的内置变量
             #include "Lighting.cginc"
@@ -77,7 +77,7 @@ shader "LearnUnityShader/Chapter7/SingleTexture"
                 float2 uv:TEXCOORD2;
             };
             
-            //定义顶点着色器
+            //顶点着色器函数 该函数返回一个v2f类型的变量，需要传入一个a2v类型的变量
             v2f vert(a2v v)
             {
                 //定义要返回的片源着色器结构体
